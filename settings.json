@@ -975,6 +975,14 @@
             "fontStyle": "italic",
             "foreground": "#009999"
           }
+        },
+        {
+          "name": "Self Defined Constants",
+          "scope": ["variable.other.enummember"],
+          "settings": {
+            "fontStyle": "italic",
+            "foreground": "#8662c7"
+          }
         }
       ]
     }
