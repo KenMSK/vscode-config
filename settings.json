@@ -889,11 +889,18 @@
           "name": "String Templates",
           "scope": [
             "punctuation.definition.string.template",
-            "punctuation.definition.template-expression",
-            "punctuation.section.embedded"
+            "punctuation.definition.template-expression"
           ],
           "settings": {
             "foreground": "#7c9955"
+          }
+        },
+        {
+          "name": "String Templates",
+          "scope": ["punctuation.section.embedded"],
+          "settings": {
+            "fontStyle": "bold",
+            "foreground": "#67b600"
           }
         },
         {
