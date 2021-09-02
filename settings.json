@@ -332,7 +332,6 @@
       "html.autoClosingTags": false,
       "javascript.autoClosingTags": false,
       "typescript.autoClosingTags": false,
-      "gitlens.mode.active": "zen",
       "editor.formatOnSave": true,
       "workbench.colorTheme": "Monokai",
       "terminal.external.osxExec": "/Applications/iTerm.app",
@@ -386,11 +385,18 @@
               "name": "String Templates",
               "scope": [
                 "punctuation.definition.string.template",
-                "punctuation.definition.template-expression",
-                "punctuation.section.embedded"
+                "punctuation.definition.template-expression"
               ],
               "settings": {
-                "foreground": "#FFFF55"
+                "foreground": "#7c9955"
+              }
+            },
+            {
+              "name": "String Templates",
+              "scope": ["punctuation.section.embedded"],
+              "settings": {
+                "fontStyle": "bold",
+                "foreground": "#67b600"
               }
             },
             {
@@ -464,6 +470,14 @@
               "settings": {
                 "fontStyle": "italic",
                 "foreground": "#009999"
+              }
+            },
+            {
+              "name": "Self Defined Constants",
+              "scope": ["variable.other.enummember"],
+              "settings": {
+                "fontStyle": "italic",
+                "foreground": "#8662c7"
               }
             }
           ]
