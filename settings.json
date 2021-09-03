@@ -918,6 +918,13 @@
           }
         },
         {
+          "name": "Tag Embedded Strings",
+          "scope": ["meta.jsx.children"],
+          "settings": {
+            "foreground": "#dddb4a"
+          }
+        },
+        {
           "name": "Tag Arrows",
           "scope": ["punctuation.definition.tag"],
           "settings": {
@@ -933,7 +940,7 @@
         },
         {
           "name": "Self Defined Component Tags",
-          "scope": ["support.class.component.tsx"],
+          "scope": ["support.class.component"],
           "settings": {
             "fontStyle": "italic",
             "foreground": "#545ffa"
