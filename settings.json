@@ -858,7 +858,7 @@
     "[Monokai]": {
       "variables": "#d6d6d6",
       "functions": "#07c401",
-      "keywords": "#c95a00",
+      "keywords": "#ff7300",
       "textMateRules": [
         {
           "name": "Punctuations",
@@ -918,14 +918,21 @@
           }
         },
         {
-          "name": "Punctuations",
+          "name": "Tag Arrows",
+          "scope": ["punctuation.definition.tag"],
+          "settings": {
+            "foreground": "#7d85fa"
+          }
+        },
+        {
+          "name": "Tag Name",
           "scope": ["entity.name.tag"],
           "settings": {
             "foreground": "#3472f7"
           }
         },
         {
-          "name": "Self Defined Components",
+          "name": "Self Defined Component Tags",
           "scope": ["support.class.component.tsx"],
           "settings": {
             "fontStyle": "italic",
@@ -933,10 +940,10 @@
           }
         },
         {
-          "name": "Punctuations",
+          "name": "Tag Attribute",
           "scope": ["entity.other.attribute-name"],
           "settings": {
-            "foreground": "#c978ad"
+            "foreground": "#a48bcc"
           }
         },
         {
