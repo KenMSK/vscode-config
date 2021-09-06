@@ -1144,7 +1144,7 @@
           "scope": ["support.type.primitive"],
           "settings": {
             "fontStyle": "",
-            "foreground": "#5ab19b"
+            "foreground": "#00996b"
           }
         },
         {
@@ -1152,7 +1152,7 @@
           "scope": ["support.type.builtin"],
           "settings": {
             "fontStyle": "",
-            "foreground": "#5ab19b"
+            "foreground": "#00996b"
           }
         },
         {
@@ -1188,7 +1188,7 @@
           "scope": ["entity.name.type.class"],
           "settings": {
             "fontStyle": "",
-            "foreground": "#00996b"
+            "foreground": "#5ab19b"
           }
         },
         {
