@@ -346,7 +346,8 @@
               "scope": [
                 "keyword.control.import",
                 "keyword.control.export",
-                "keyword.control.from"
+                "keyword.control.from",
+                "keyword.control.as"
               ],
               "settings": {
                 "foreground": "#a6e08f"
@@ -361,7 +362,11 @@
             },
             {
               "name": "Varibles",
-              "scope": ["variable.other.constant", "variable"],
+              "scope": [
+                "variable.other.constant",
+                "variable.other.readwrite.alias",
+                "variable"
+              ],
               "settings": {
                 "fontStyle": "",
                 "foreground": "#d6d6d6"
@@ -915,7 +920,8 @@
           "scope": [
             "keyword.control.import",
             "keyword.control.export",
-            "keyword.control.from"
+            "keyword.control.from",
+            "keyword.control.as"
           ],
           "settings": {
             "foreground": "#a6e08f"
@@ -930,7 +936,11 @@
         },
         {
           "name": "Varibles",
-          "scope": ["variable.other.constant", "variable"],
+          "scope": [
+            "variable.other.constant",
+            "variable.other.readwrite.alias",
+            "variable"
+          ],
           "settings": {
             "fontStyle": "",
             "foreground": "#d6d6d6"
