@@ -1184,6 +1184,14 @@
           }
         },
         {
+          "name": "Class",
+          "scope": ["entity.name.type.class"],
+          "settings": {
+            "fontStyle": "",
+            "foreground": "#00996b"
+          }
+        },
+        {
           "name": "Self Defined Constants",
           "scope": ["variable.other.enummember"],
           "settings": {
