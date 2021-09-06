@@ -1135,13 +1135,17 @@
   },
   "editor.suggest.preview": true,
   "workbench.colorCustomizations": {
-    "editor.findMatchHighlightBackground": "#5c5c5c",
-    "editor.findMatchHighlightBorder": "#d8d8d8",
-    "editor.findMatchBackground": "#999999",
-    "editorGroup.border": "#005555",
-    "tab.activeBackground": "#25253A",
-    "tab.activeBorderTop": "#00cccc",
-    "tab.hoverBorder": "#00CCCC",
-    "tab.inactiveBackground": "#222222"
+    "[Monokai]": {
+      "editor.findMatchHighlightBackground": "#634747",
+      // "editor.selectionBackground": "#ff0000",
+      // "editor.selectionHighlightBackground": "#0000FF",
+      "editor.findMatchHighlightBorder": "#d8d8d8",
+      "editor.findMatchBackground": "#999999",
+      "editorGroup.border": "#005555",
+      "tab.activeBackground": "#25253A",
+      "tab.activeBorderTop": "#00cccc",
+      "tab.hoverBorder": "#00CCCC",
+      "tab.inactiveBackground": "#222222"
+    }
   }
 }
