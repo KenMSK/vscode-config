@@ -1001,13 +1001,6 @@
           }
         },
         {
-          "name": "Style Attribute Literals",
-          "scope": ["source.css"],
-          "settings": {
-            "foreground": "#d3b300"
-          }
-        },
-        {
           "name": "Tag Embedded Strings",
           "scope": ["meta.jsx.children"],
           "settings": {
@@ -1041,6 +1034,34 @@
           "settings": {
             "fontStyle": "italic",
             "foreground": "#545ffa"
+          }
+        },
+        {
+          "name": "CSS Properties",
+          "scope": ["support.type.property-name.css"],
+          "settings": {
+            "foreground": "#c23872"
+          }
+        },
+        {
+          "name": "CSS values",
+          "scope": ["support.constant.property-value.css"],
+          "settings": {
+            "foreground": "#923e7d"
+          }
+        },
+        {
+          "name": "CSS Units",
+          "scope": ["keyword.other.unit"],
+          "settings": {
+            "foreground": "#388fc2"
+          }
+        },
+        {
+          "name": "Style Attribute Literals",
+          "scope": ["source.css"],
+          "settings": {
+            "foreground": "#c23872"
           }
         },
         {
