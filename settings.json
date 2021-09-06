@@ -954,7 +954,6 @@
   "javascript.autoClosingTags": false,
   "typescript.autoClosingTags": false,
   "editor.formatOnSave": true,
-  "workbench.colorTheme": "Monokai",
   "terminal.external.osxExec": "/Applications/iTerm.app",
   "terminal.integrated.defaultProfile.osx": "zsh",
   "editor.tokenColorCustomizations": {
@@ -1142,10 +1141,10 @@
         },
         {
           "name": "Primitive Type",
-          "scope": ["support.type.primitive.tsx"],
+          "scope": ["support.type.primitive"],
           "settings": {
             "fontStyle": "",
-            "foreground": "#56bace"
+            "foreground": "#5ab19b"
           }
         },
         {
@@ -1153,7 +1152,7 @@
           "scope": ["support.type.builtin"],
           "settings": {
             "fontStyle": "",
-            "foreground": "#56bace"
+            "foreground": "#5ab19b"
           }
         },
         {
@@ -1168,7 +1167,7 @@
           "name": "Types Colon",
           "scope": ["keyword.operator.type.annotation"],
           "settings": {
-            "foreground": "#009999"
+            "foreground": "#067a7a"
           }
         },
         {
@@ -1209,5 +1208,6 @@
     "tab.activeBorderTop": "#008585",
     "tab.hoverBorder": "#00CCCC",
     "tab.inactiveBackground": "#00000044"
-  }
+  },
+  "workbench.colorTheme": "Monokai"
 }
