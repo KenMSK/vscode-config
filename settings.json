@@ -338,10 +338,50 @@
       "terminal.integrated.defaultProfile.osx": "zsh",
       "editor.tokenColorCustomizations": {
         "[Monokai]": {
-          "variables": "#d6d6d6",
           "functions": "#07c401",
-          "keywords": "#c95a00",
+          "keywords": "#ff7300",
           "textMateRules": [
+            {
+              "name": "Module Source Control",
+              "scope": [
+                "keyword.control.import",
+                "keyword.control.export",
+                "keyword.control.from"
+              ],
+              "settings": {
+                "foreground": "#a6e08f"
+              }
+            },
+            {
+              "name": "Variables",
+              "scope": ["variable.other.readwrite", "variable.other.property"],
+              "settings": {
+                "foreground": "#ffeeee"
+              }
+            },
+            {
+              "name": "Varibles",
+              "scope": ["variable.other.constant", "variable"],
+              "settings": {
+                "fontStyle": "",
+                "foreground": "#d6d6d6"
+              }
+            },
+            {
+              "name": "Imported System Varibles",
+              "scope": ["support.other.variable"],
+              "settings": {
+                "fontStyle": "",
+                "foreground": "#b5d4d4"
+              }
+            },
+            {
+              "name": "Flow Control",
+              "scope": ["keyword.control"],
+              "settings": {
+                "foreground": "#e90101"
+              }
+            },
             {
               "name": "Punctuations",
               "scope": ["punctuation"],
@@ -364,25 +404,7 @@
               }
             },
             {
-              "name": "Module Source Control",
-              "scope": [
-                "keyword.control.import",
-                "keyword.control.export",
-                "keyword.control.from"
-              ],
-              "settings": {
-                "foreground": "#a6e08f"
-              }
-            },
-            {
-              "name": "Flow Control",
-              "scope": ["keyword.control"],
-              "settings": {
-                "foreground": "#e90101"
-              }
-            },
-            {
-              "name": "String Templates",
+              "name": "String Templates Expressions",
               "scope": [
                 "punctuation.definition.string.template",
                 "punctuation.definition.template-expression"
@@ -400,25 +422,53 @@
               }
             },
             {
-              "name": "Punctuations",
+              "name": "Style Attribute Literals",
+              "scope": ["source.css"],
+              "settings": {
+                "foreground": "#d3b300"
+              }
+            },
+            {
+              "name": "Tag Embedded Strings",
+              "scope": ["meta.jsx.children"],
+              "settings": {
+                "foreground": "#dddb4a"
+              }
+            },
+            {
+              "name": "Tag Arrows",
+              "scope": ["punctuation.definition.tag"],
+              "settings": {
+                "foreground": "#7d85fa"
+              }
+            },
+            {
+              "name": "Tag Name",
+              "scope": ["meta.tag"],
+              "settings": {
+                "foreground": "#3472f7"
+              }
+            },
+            {
+              "name": "Tag Name",
               "scope": ["entity.name.tag"],
               "settings": {
                 "foreground": "#3472f7"
               }
             },
             {
-              "name": "Self Defined Components",
-              "scope": ["support.class.component.tsx"],
+              "name": "Self Defined Component Tags",
+              "scope": ["support.class.component"],
               "settings": {
                 "fontStyle": "italic",
                 "foreground": "#545ffa"
               }
             },
             {
-              "name": "Punctuations",
+              "name": "Tag Attribute",
               "scope": ["entity.other.attribute-name"],
               "settings": {
-                "foreground": "#c978ad"
+                "foreground": "#a48bcc"
               }
             },
             {
@@ -483,9 +533,10 @@
           ]
         }
       },
+      "editor.suggest.preview": true,
       "workbench.colorCustomizations": {
-        "editor.findMatchHighlightBackground": "#225544",
-        "editor.findMatchHighlightBorder": "#00cccc",
+        "editor.findMatchHighlightBackground": "#5c5c5c",
+        "editor.findMatchHighlightBorder": "#d8d8d8",
         "editor.findMatchBackground": "#999999",
         "editorGroup.border": "#005555",
         "tab.activeBackground": "#25253A",
@@ -856,10 +907,50 @@
   "terminal.integrated.defaultProfile.osx": "zsh",
   "editor.tokenColorCustomizations": {
     "[Monokai]": {
-      "variables": "#d6d6d6",
       "functions": "#07c401",
       "keywords": "#ff7300",
       "textMateRules": [
+        {
+          "name": "Module Source Control",
+          "scope": [
+            "keyword.control.import",
+            "keyword.control.export",
+            "keyword.control.from"
+          ],
+          "settings": {
+            "foreground": "#a6e08f"
+          }
+        },
+        {
+          "name": "Variables",
+          "scope": ["variable.other.readwrite", "variable.other.property"],
+          "settings": {
+            "foreground": "#ffeeee"
+          }
+        },
+        {
+          "name": "Varibles",
+          "scope": ["variable.other.constant", "variable"],
+          "settings": {
+            "fontStyle": "",
+            "foreground": "#d6d6d6"
+          }
+        },
+        {
+          "name": "Imported System Varibles",
+          "scope": ["support.other.variable"],
+          "settings": {
+            "fontStyle": "",
+            "foreground": "#b5d4d4"
+          }
+        },
+        {
+          "name": "Flow Control",
+          "scope": ["keyword.control"],
+          "settings": {
+            "foreground": "#e90101"
+          }
+        },
         {
           "name": "Punctuations",
           "scope": ["punctuation"],
@@ -882,25 +973,7 @@
           }
         },
         {
-          "name": "Module Source Control",
-          "scope": [
-            "keyword.control.import",
-            "keyword.control.export",
-            "keyword.control.from"
-          ],
-          "settings": {
-            "foreground": "#a6e08f"
-          }
-        },
-        {
-          "name": "Flow Control",
-          "scope": ["keyword.control"],
-          "settings": {
-            "foreground": "#e90101"
-          }
-        },
-        {
-          "name": "String Templates",
+          "name": "String Templates Expressions",
           "scope": [
             "punctuation.definition.string.template",
             "punctuation.definition.template-expression"
@@ -918,6 +991,13 @@
           }
         },
         {
+          "name": "Style Attribute Literals",
+          "scope": ["source.css"],
+          "settings": {
+            "foreground": "#d3b300"
+          }
+        },
+        {
           "name": "Tag Embedded Strings",
           "scope": ["meta.jsx.children"],
           "settings": {
@@ -929,6 +1009,13 @@
           "scope": ["punctuation.definition.tag"],
           "settings": {
             "foreground": "#7d85fa"
+          }
+        },
+        {
+          "name": "Tag Name",
+          "scope": ["meta.tag"],
+          "settings": {
+            "foreground": "#3472f7"
           }
         },
         {
@@ -1015,9 +1102,10 @@
       ]
     }
   },
+  "editor.suggest.preview": true,
   "workbench.colorCustomizations": {
-    "editor.findMatchHighlightBackground": "#225544",
-    "editor.findMatchHighlightBorder": "#00cccc",
+    "editor.findMatchHighlightBackground": "#5c5c5c",
+    "editor.findMatchHighlightBorder": "#d8d8d8",
     "editor.findMatchBackground": "#999999",
     "editorGroup.border": "#005555",
     "tab.activeBackground": "#25253A",
