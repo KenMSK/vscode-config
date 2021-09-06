@@ -1136,16 +1136,16 @@
   "editor.suggest.preview": true,
   "workbench.colorCustomizations": {
     "[Monokai]": {
-      "editor.findMatchHighlightBackground": "#634747",
-      // "editor.selectionBackground": "#ff0000",
-      // "editor.selectionHighlightBackground": "#0000FF",
+      "editor.findMatchHighlightBackground": "#0000ff67",
+      "editor.selectionBackground": "#c5c5c571",
+      "editor.selectionHighlightBackground": "#b3ff002d",
       "editor.findMatchHighlightBorder": "#d8d8d8",
-      "editor.findMatchBackground": "#999999",
-      "editorGroup.border": "#005555",
-      "tab.activeBackground": "#25253A",
-      "tab.activeBorderTop": "#00cccc",
-      "tab.hoverBorder": "#00CCCC",
-      "tab.inactiveBackground": "#222222"
-    }
+      "editor.findMatchBackground": "#ffffff8f",
+      "editorGroup.border": "#005555"
+    },
+    "tab.activeBackground": "#0000974b",
+    "tab.activeBorderTop": "#008585",
+    "tab.hoverBorder": "#00CCCC",
+    "tab.inactiveBackground": "#00000044"
   }
 }
