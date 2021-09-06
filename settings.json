@@ -947,6 +947,13 @@
           }
         },
         {
+          "name": "Varibles",
+          "scope": ["variable.parameter"],
+          "settings": {
+            "fontStyle": ""
+          }
+        },
+        {
           "name": "Imported System Varibles",
           "scope": ["support.other.variable"],
           "settings": {
@@ -1089,6 +1096,14 @@
         {
           "name": "Primitive Type",
           "scope": ["support.type.primitive.tsx"],
+          "settings": {
+            "fontStyle": "",
+            "foreground": "#56bace"
+          }
+        },
+        {
+          "name": "Primitive Type",
+          "scope": ["support.type.builtin"],
           "settings": {
             "fontStyle": "",
             "foreground": "#56bace"
