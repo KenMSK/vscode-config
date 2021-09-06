@@ -959,7 +959,7 @@
   "editor.tokenColorCustomizations": {
     "[Monokai]": {
       "functions": "#07c401",
-      "keywords": "#ff7300",
+      "keywords": "#c75a00",
       "textMateRules": [
         {
           "name": "Module Source Control",
