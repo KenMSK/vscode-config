@@ -46,7 +46,7 @@
   {
     "key": "escape",
     "command": "hideSuggestWidget",
-    "when": "suggestWidgetVisible"
+    "when": "suggestWidgetVisible && !textInputFocus"
   },
   {
     "key": "escape",
