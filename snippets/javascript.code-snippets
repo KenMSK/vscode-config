@@ -50,10 +50,10 @@
       "export const ${1:ComponentName}:",
       "React.FunctionComponent<${1}PropType> = ({ $2 }) => {",
       "${3:/* Computational Logic */}",
-      " return (<>",
+      "  return (<>",
       "${4}",
-      " </>)",
-      "}"
+      "  </>)",
+      "}${5}"
     ],
     "description": "Log output to console"
   },
@@ -68,7 +68,8 @@
       "  return (<>",
       "    ${CLIPBOARD}",
       "  </>)",
-      "}"
+      "}",
+      "<$1 {...{$2}}/>"
     ],
     "description": "Log output to console"
   },
