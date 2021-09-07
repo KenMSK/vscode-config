@@ -43,7 +43,7 @@
     "description": "Wrap logic in IF statement"
   },
   "React Functional Component": {
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+    "scope": "typescriptreact",
     "prefix": "rfc",
     "body": [
       "type ${1}PropType = {${2:/* PropTypes */}}",
@@ -58,7 +58,7 @@
     "description": "FC Template Snippet"
   },
   "React Functional Component Clipboard": {
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+    "scope": "typescriptreact",
     "prefix": "rfcp",
     "body": [
       "type ${1}PropType = {${2:/* PropTypes */}}",
@@ -74,14 +74,14 @@
     "description": "Wrap Clipboard content as Component"
   },
   "React Use State": {
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+    "scope": "javascriptreact,typescriptreact",
     "prefix": "ust",
     "body": [
       "const [${1:stateVar}, set${1/^([a-z])/${1:/upcase}/}] = useState(${2:/* InitialState */})"
     ]
   },
   "React Use Memo": {
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+    "scope": "javascriptreact,typescriptreact",
     "prefix": "umem",
     "body": [
       "const ${1:memoValue} = useMemo(()=>{",
@@ -91,7 +91,7 @@
     ]
   },
   "React Use Callback": {
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+    "scope": "javascriptreact,typescriptreact",
     "prefix": "ucall",
     "body": [
       "const ${1:memoizedFunction} = useCallback(",
@@ -100,7 +100,7 @@
     ]
   },
   "React Use Context": {
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+    "scope": "javascriptreact,typescriptreact",
     "prefix": "ucon",
     "body": ["const { $2 } = useContext($1)"]
   }
