@@ -45,6 +45,11 @@
   },
   {
     "key": "escape",
+    "command": "hideSuggestWidget",
+    "when": "suggestWidgetVisible"
+  },
+  {
+    "key": "escape",
     "command": "-closeReferenceSearch",
     "when": "referenceSearchVisible && !config.editor.stablePeek"
   },
@@ -106,11 +111,6 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "cmd+enter",
-    "command": "-editor.action.insertLineAfter",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
     "key": "shift+cmd+enter",
     "command": "-editor.action.insertLineBefore",
     "when": "editorTextFocus && !editorReadonly"
@@ -158,5 +158,15 @@
     "key": "ctrl+space",
     "command": "-editor.action.triggerSuggest",
     "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+i",
+    "command": "hideSuggestWidget",
+    "when": "suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "cmd+enter",
+    "command": "-editor.action.insertLineAfter",
+    "when": "editorTextFocus && !editorReadonly"
   }
 ]
