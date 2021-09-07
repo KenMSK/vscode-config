@@ -20,7 +20,7 @@
     "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "debug",
     "body": ["console.log('DEBUG!!! Tag:${RANDOM}', {$2}, 'Var [$2]')", "$3"],
-    "description": "Log output to console"
+    "description": "Log Debug Message to console"
   },
   "TryCatchTemplate": {
     "scope": "javascript,javascriptreact,typescript,typescriptreact",
@@ -34,13 +34,13 @@
       "  console.error('Err-id:$RANDOM ,Error when: $1', error)",
       "}$4"
     ],
-    "description": "Log output to console"
+    "description": "Create a standard try catch block"
   },
   "If() Clipboard": {
     "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "ifp",
     "body": ["if($1)", "{", "$CLIPBOARD", "}"],
-    "description": "Log output to console"
+    "description": "Wrap logic in IF statement"
   },
   "React Functional Component": {
     "scope": "javascript,javascriptreact,typescript,typescriptreact",
@@ -55,7 +55,7 @@
       "  </>)",
       "}${5}"
     ],
-    "description": "Log output to console"
+    "description": "FC Template Snippet"
   },
   "React Functional Component Clipboard": {
     "scope": "javascript,javascriptreact,typescript,typescriptreact",
@@ -71,13 +71,13 @@
       "}",
       "<$1 {...{$2}}/>"
     ],
-    "description": "Log output to console"
+    "description": "Wrap Clipboard content as Component"
   },
   "React Use State": {
     "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "ust",
     "body": [
-      "const [${1:stateVar}, set${1/([a-z])/${1:/upcase}/}] = useState(${2:/* InitialState */})"
+      "const [${1:stateVar}, set${1/^([a-z])/${1:/upcase}/}] = useState(${2:/* InitialState */})"
     ]
   },
   "React Use Memo": {
