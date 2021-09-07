@@ -1217,5 +1217,6 @@
     "tab.hoverBorder": "#00CCCC",
     "tab.inactiveBackground": "#00000044"
   },
-  "workbench.colorTheme": "Monokai"
+  "workbench.colorTheme": "Monokai",
+  "editor.tabCompletion": "on"
 }
