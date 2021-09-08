@@ -333,13 +333,12 @@
       "javascript.autoClosingTags": false,
       "typescript.autoClosingTags": false,
       "editor.formatOnSave": true,
-      "workbench.colorTheme": "Monokai",
       "terminal.external.osxExec": "/Applications/iTerm.app",
       "terminal.integrated.defaultProfile.osx": "zsh",
       "editor.tokenColorCustomizations": {
         "[Monokai]": {
           "functions": "#07c401",
-          "keywords": "#ff7300",
+          "keywords": "#c75a00",
           "textMateRules": [
             {
               "name": "Module Source Control",
@@ -480,7 +479,7 @@
               "name": "CSS values",
               "scope": ["support.constant.property-value.css"],
               "settings": {
-                "foreground": "#923e7d"
+                "foreground": "#b858a0"
               }
             },
             {
@@ -521,18 +520,18 @@
             },
             {
               "name": "Primitive Type",
-              "scope": ["support.type.primitive.tsx"],
+              "scope": ["support.type.primitive"],
               "settings": {
                 "fontStyle": "",
-                "foreground": "#56bace"
+                "foreground": "#00996b"
               }
             },
             {
-              "name": "Primitive Type",
+              "name": "Built in Type",
               "scope": ["support.type.builtin"],
               "settings": {
                 "fontStyle": "",
-                "foreground": "#56bace"
+                "foreground": "#00996b"
               }
             },
             {
@@ -547,7 +546,7 @@
               "name": "Types Colon",
               "scope": ["keyword.operator.type.annotation"],
               "settings": {
-                "foreground": "#009999"
+                "foreground": "#067a7a"
               }
             },
             {
@@ -561,6 +560,14 @@
               "settings": {
                 "fontStyle": "italic",
                 "foreground": "#009999"
+              }
+            },
+            {
+              "name": "Class",
+              "scope": ["entity.name.type.class"],
+              "settings": {
+                "fontStyle": "",
+                "foreground": "#5ab19b"
               }
             },
             {
@@ -588,7 +595,9 @@
         "tab.activeBorderTop": "#008585",
         "tab.hoverBorder": "#00CCCC",
         "tab.inactiveBackground": "#00000044"
-      }
+      },
+      "workbench.colorTheme": "Monokai",
+      "editor.tabCompletion": "on"
     }
   },
   "profileSwitcher.extensions": {
@@ -822,11 +831,11 @@
         "name": "prettier-vscode"
       },
       {
-        "id": "06cc3e44-aedb-41b8-a4ea-29ebf3c491fd",
-        "publisherId": "jpoissonnier.vscode-styled-components",
-        "publisherName": "jpoissonnier",
-        "version": "1.6.6",
-        "name": "vscode-styled-components"
+        "id": "6e440e71-8ed9-4f25-bb78-4b13096b8a03",
+        "publisherId": "formulahendry.auto-rename-tag",
+        "publisherName": "formulahendry",
+        "version": "0.1.8",
+        "name": "auto-rename-tag"
       },
       {
         "id": "eaa2127d-cb69-4ab9-8505-a60c9ee5f28b",
