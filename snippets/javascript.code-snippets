@@ -30,18 +30,41 @@
     "body": ["if($1)", "{", "$CLIPBOARD", "}"],
     "description": "Wrap logic in IF statement"
   },
+  "Snippet Test": {
+    "prefix": "SnippetTest",
+    "body": ["${1:default}", "${1}"],
+    "description": "Snippet that triggers visual mode"
+  },
+
   "React Functional Component": {
     "scope": "typescriptreact",
     "prefix": "rfc",
     "body": [
-      "type ${1}PropType = {${2:/* PropTypes */}}",
+      "type ${1}PropType = {${2}}",
       "export const ${1:ComponentName}:",
-      "React.FunctionComponent<${1}PropType> = ({ $2 }) => {",
+      "React.FunctionComponent<${1}PropType> = ({${2/(:[^,]+)/ /g}}) => {",
       "${3:/* Computational Logic */}",
       "  return (<>",
       "${4}",
       "  </>)",
-      "}${5}"
+      "}${5}",
+      "// <$1 ${2/([^,:]+)([:][^,:]+)*([,\\s]*|)/$1={$1} /g}/>"
+    ],
+    "description": "FC Template Snippet"
+  },
+
+  "React Functional Component(jsx)": {
+    "scope": "javascriptreact",
+    "prefix": "rfc",
+    "body": [
+      "export function ${1:ComponentName}(",
+      "{${2:/* Props */}}){",
+      "${3:/* Computational Logic */}",
+      "  return (<>",
+      "${4}",
+      "  </>)",
+      "}${5}",
+      "// <$1 ${2/([^,:]+)([,\\s]*|)/$1={$1} /g}/>"
     ],
     "description": "FC Template Snippet"
   },
@@ -49,15 +72,15 @@
     "scope": "typescriptreact",
     "prefix": "rfcp",
     "body": [
-      "type ${1}PropType = {${2:/* PropTypes */}}",
+      "type ${1}PropType = {${2:/* Simple Types */}}",
       "export const ${1:ComponentName}:",
-      "React.FunctionComponent<${1}PropType> = ({ $2 }) => {",
+      "React.FunctionComponent<${1}PropType> = ({${2/(:[^,]+)/ /g}}) => {",
       "${3:/* Computational Logic */}",
       "  return (<>",
       "    ${CLIPBOARD}",
       "  </>)",
       "}",
-      "<$1 {...{$2}}/>"
+      "// <$1 ${2/([^,:]+)([:][^,:]+)*([,\\s]*|)/$1={$1} /g}/>"
     ],
     "description": "Wrap Clipboard content as Component"
   },
