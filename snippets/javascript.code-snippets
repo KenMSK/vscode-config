@@ -105,8 +105,8 @@
     "prefix": "ucall",
     "body": [
       "const ${1:memoizedFunction} = useCallback(",
-      "${2:()=>{\\}}",
-      ", [$3])"
+      "($2)=>{$3}",
+      ", [$4])"
     ]
   },
   "React Use Context": {
