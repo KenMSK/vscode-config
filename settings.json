@@ -986,7 +986,7 @@
           "name": "Variables",
           "scope": ["variable.other.readwrite", "variable.other.property"],
           "settings": {
-            "foreground": "#ffeeee"
+            "foreground": "#eeffee"
           }
         },
         {
