@@ -1354,5 +1354,7 @@
       "bold": false,
       "italic": false
     }
-  ]
+  ],
+  "window.zoomLevel": -1,
+  "python.languageServer": "Pylance"
 }
