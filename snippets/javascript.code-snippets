@@ -7,7 +7,7 @@
   "Debug to console": {
     "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "debug",
-    "body": ["console.log('DEBUG!!! Tag:${RANDOM}', {$2}, 'Var [$2]')", "$3"],
+    "body": ["console.log('DEBUG!!! $1 Tag:${RANDOM}', {$2}, 'Var [$2]')"],
     "description": "Log Debug Message to console"
   },
   "TryCatchTemplate": {
