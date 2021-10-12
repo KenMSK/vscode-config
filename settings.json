@@ -1113,14 +1113,21 @@
           "name": "Operator",
           "scope": ["keyword.operator"],
           "settings": {
-            "foreground": "#69d610"
+            "foreground": "#769c57"
           }
         },
         {
           "name": "Assignment",
           "scope": ["keyword.operator.assignment"],
           "settings": {
-            "foreground": "#73ff00"
+            "foreground": "#ff7171"
+          }
+        },
+        {
+          "name": "Arrow function",
+          "scope": ["storage.type.function.arrow"],
+          "settings": {
+            "foreground": "#07c401"
           }
         },
         {
