@@ -1303,8 +1303,8 @@
       "editor.findMatchHighlightBackground": "#0000ff49",
       "editor.selectionBackground": "#c5c5c571",
       "editor.selectionHighlightBackground": "#b3ff002d",
-      "editor.findMatchHighlightBorder": "#d8d8d8",
-      "editor.findMatchBackground": "#ffffff8f",
+      "editor.findMatchHighlightBorder": "#fffaf447",
+      "editor.findMatchBackground": "#fffaf424",
       "editorGroup.border": "#005555"
     },
     "tab.activeBackground": "#0000974b",
