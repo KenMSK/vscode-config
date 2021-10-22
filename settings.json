@@ -1216,7 +1216,7 @@
           "name": "Tag Attribute",
           "scope": ["entity.other.attribute-name"],
           "settings": {
-            "foreground": "#a48bcc"
+            "foreground": "#beb5e7"
           }
         },
         {
@@ -1286,12 +1286,21 @@
             "foreground": "#5ab19b"
           }
         },
+
+        {
+          "name": "Self Defined Constants",
+          "scope": ["entity.name.type.enum"],
+          "settings": {
+            "fontStyle": "",
+            "foreground": "#db81ff"
+          }
+        },
         {
           "name": "Self Defined Constants",
           "scope": ["variable.other.enummember"],
           "settings": {
             "fontStyle": "italic",
-            "foreground": "#8662c7"
+            "foreground": "#AE81FF"
           }
         }
       ]
