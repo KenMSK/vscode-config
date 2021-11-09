@@ -1047,7 +1047,7 @@
   "editor.tokenColorCustomizations": {
     "[Monokai]": {
       "functions": "#07c401",
-      "keywords": "#c75a00",
+      "keywords": "#cfa4a4",
       "textMateRules": [
         {
           "name": "Module Source Control",
@@ -1378,5 +1378,8 @@
     "borderColor : #00FFFF",
     "opacity: 0.075"
   ],
-  "window.zoomLevel": -2
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "window.zoomLevel": -1
 }
