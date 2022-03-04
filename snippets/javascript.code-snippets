@@ -7,8 +7,16 @@
   "Debug to console": {
     "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "debug",
-    "body": ["console.log('DEBUG!!! $1 <${RANDOM}>', {$2}, 'Var [$2]')"],
+    "body": ["console.log('DEBUG!!! $1 <${RANDOM}>', {$2}, '{$2}')"],
     "description": "Log Debug Message to console"
+  },
+  "simple-uuid": {
+    "prefix": "uuid",
+    "body": "${UUID}"
+  },
+  "HEX Only uuid": {
+    "prefix": "uuidHex",
+    "body": "${UUID/([^-]*|)([-])?/${1:/upcase}/g}"
   },
   "TryCatchTemplate": {
     "scope": "javascript,javascriptreact,typescript,typescriptreact",
@@ -30,10 +38,11 @@
     "body": ["if($1)", "{", "$CLIPBOARD", "}"],
     "description": "Wrap logic in IF statement"
   },
-  "Snippet Test": {
-    "prefix": "SnippetTest",
-    "body": ["${1:default}", "${1}"],
-    "description": "Snippet that triggers visual mode"
+
+  "Wrap with <>": {
+    "scope": "javascriptreact,typescriptreact",
+    "prefix": "wraptag",
+    "body": ["<$1>", "    ${CLIPBOARD}", "</>"]
   },
 
   "React Functional Component": {
@@ -113,5 +122,27 @@
     "scope": "javascriptreact,typescriptreact",
     "prefix": "ucon",
     "body": ["const { $2 } = useContext($1)"]
+  },
+  "Comment Trace code": {
+    "scope": "javascriptreact,typescriptreact",
+    "prefix": "tracecode",
+    "body": ["// !trace: $1"]
+  },
+  "WrapTrim": {
+    "scope": "javascriptreact,typescriptreact",
+    "prefix": "wrapTrim",
+    "body": ["$1${CLIPBOARD/^[ \t]+//}$1"]
+  },
+
+  "React use Query": {
+    "scope": "javascriptreact,typescriptreact",
+    "prefix": "uque",
+    "body": [
+      "const ${1:varName} = useQuery(",
+      "\"${2:name}-${UUID}\",",
+      "${3:function}",
+      "{ enabled: ${4:true} }",
+      ")"
+    ]
   }
 }
