@@ -315,7 +315,7 @@
       "editor.tokenColorCustomizations": {
         "[Monokai]": {
           "functions": "#07c401",
-          "keywords": "#c75a00",
+          "keywords": "#cfa4a4",
           "textMateRules": [
             {
               "name": "Module Source Control",
@@ -381,14 +381,21 @@
               "name": "Operator",
               "scope": ["keyword.operator"],
               "settings": {
-                "foreground": "#69d610"
+                "foreground": "#769c57"
               }
             },
             {
               "name": "Assignment",
               "scope": ["keyword.operator.assignment"],
               "settings": {
-                "foreground": "#73ff00"
+                "foreground": "#ff7171"
+              }
+            },
+            {
+              "name": "Arrow function",
+              "scope": ["storage.type.function.arrow"],
+              "settings": {
+                "foreground": "#07c401"
               }
             },
             {
@@ -477,7 +484,7 @@
               "name": "Tag Attribute",
               "scope": ["entity.other.attribute-name"],
               "settings": {
-                "foreground": "#a48bcc"
+                "foreground": "#beb5e7"
               }
             },
             {
@@ -549,10 +556,18 @@
             },
             {
               "name": "Self Defined Constants",
+              "scope": ["entity.name.type.enum"],
+              "settings": {
+                "fontStyle": "",
+                "foreground": "#db81ff"
+              }
+            },
+            {
+              "name": "Self Defined Constants",
               "scope": ["variable.other.enummember"],
               "settings": {
                 "fontStyle": "italic",
-                "foreground": "#8662c7"
+                "foreground": "#AE81FF"
               }
             }
           ]
@@ -564,8 +579,8 @@
           "editor.findMatchHighlightBackground": "#0000ff49",
           "editor.selectionBackground": "#c5c5c571",
           "editor.selectionHighlightBackground": "#b3ff002d",
-          "editor.findMatchHighlightBorder": "#d8d8d8",
-          "editor.findMatchBackground": "#ffffff8f",
+          "editor.findMatchHighlightBorder": "#fffaf447",
+          "editor.findMatchBackground": "#fffaf424",
           "editorGroup.border": "#005555"
         },
         "tab.activeBackground": "#0000974b",
@@ -629,7 +644,11 @@
         "borderWidth : 5px",
         "borderColor : #00FFFF",
         "opacity: 0.075"
-      ]
+      ],
+      "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      },
+      "window.zoomLevel": -1
     }
   },
   "profileSwitcher.extensions": {
@@ -859,15 +878,22 @@
         "id": "583b2b34-2c1e-4634-8c0b-0b82e283ea3a",
         "publisherId": "dbaeumer.vscode-eslint",
         "publisherName": "dbaeumer",
-        "version": "2.1.25",
+        "version": "2.2.2",
         "name": "vscode-eslint"
       },
       {
         "id": "4de763bd-505d-4978-9575-2b7696ecf94e",
         "publisherId": "eamodio.gitlens",
         "publisherName": "eamodio",
-        "version": "11.6.0",
+        "version": "11.6.1",
         "name": "gitlens"
+      },
+      {
+        "id": "35750bd1-5814-41de-b99f-ee57a443450f",
+        "publisherId": "earshinov.permute-lines",
+        "publisherName": "earshinov",
+        "version": "1.1.0",
+        "name": "permute-lines"
       },
       {
         "id": "96fa4707-6983-4489-b7c5-d5ffdfdcce90",
@@ -880,14 +906,14 @@
         "id": "6e440e71-8ed9-4f25-bb78-4b13096b8a03",
         "publisherId": "formulahendry.auto-rename-tag",
         "publisherName": "formulahendry",
-        "version": "0.1.8",
+        "version": "0.1.9",
         "name": "auto-rename-tag"
       },
       {
         "id": "69ddd764-339a-4ecc-97c1-9c4ece58e36d",
         "publisherId": "GitHub.vscode-pull-request-github",
         "publisherName": "GitHub",
-        "version": "0.30.0",
+        "version": "0.31.0",
         "name": "vscode-pull-request-github"
       },
       {
@@ -908,7 +934,7 @@
         "id": "6c2f1801-1e7f-45b2-9b5c-7782f1e076e8",
         "publisherId": "ms-toolsai.jupyter",
         "publisherName": "ms-toolsai",
-        "version": "2021.8.2041215044",
+        "version": "2021.9.1101343141",
         "name": "jupyter"
       },
       {
@@ -919,10 +945,17 @@
         "name": "jupyter-keymap"
       },
       {
+        "id": "b15c72f8-d5fe-421a-a4f7-27ed9f6addbf",
+        "publisherId": "ms-toolsai.jupyter-renderers",
+        "publisherName": "ms-toolsai",
+        "version": "1.0.3",
+        "name": "jupyter-renderers"
+      },
+      {
         "id": "eaa2127d-cb69-4ab9-8505-a60c9ee5f28b",
         "publisherId": "oderwat.indent-rainbow",
         "publisherName": "oderwat",
-        "version": "8.0.0",
+        "version": "8.1.0",
         "name": "indent-rainbow"
       },
       {
@@ -943,7 +976,7 @@
         "id": "d96e79c6-8b25-4be3-8545-0e0ecefcae03",
         "publisherId": "vscodevim.vim",
         "publisherName": "vscodevim",
-        "version": "1.21.7",
+        "version": "1.21.10",
         "name": "vim"
       },
       {
@@ -1308,6 +1341,8 @@
   },
   "editor.suggest.preview": true,
   "workbench.colorCustomizations": {
+    // "editorBracketPairGuide.activeBackground1": "#ff0000",
+    // "editorBracketHighlight.foreground1": "#ff0000",
     "[Monokai]": {
       "editor.findMatchHighlightBackground": "#0000ff49",
       "editor.selectionBackground": "#c5c5c571",
@@ -1381,5 +1416,20 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "prettier.semi": false,
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  },
+  "redhat.telemetry.enabled": false,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "bracket-pair-colorizer-2.depreciation-notice": false,
   "window.zoomLevel": -1
+  // if the bracket pair-colorizer is finally broken, use these
+  // "editor.guides.bracketPairs": "active",
+  // "editor.guides.bracketPairsHorizontal": "active",
+  // "editor.guides.highlightActiveIndentation": true
 }
